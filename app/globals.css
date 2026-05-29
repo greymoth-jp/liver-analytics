@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  /* LiverAnalytics — Professional dark B2B palette */
+  --canvas: #0b0f1a;
+  --canvas-2: #111827;
+  --surface-1: #1c2333;
+  --surface-2: #243047;
+  --surface-3: #2e3d5c;
+
+  --ink: #f1f5f9;
+  --ink-muted: #94a3b8;
+  --ink-subtle: #64748b;
+
+  --focus-primary: #6366f1;
+  --focus-secondary: #818cf8;
+  --focus-glow: rgba(99, 102, 241, 0.3);
+
+  --accent-green: #22c55e;
+  --accent-red: #ef4444;
+  --accent-amber: #f59e0b;
+  --accent-cyan: #06b6d4;
+
+  --hairline: rgba(241, 245, 249, 0.08);
+  --hairline-mid: rgba(241, 245, 249, 0.12);
+
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  --background: var(--canvas);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-subtle);
+}

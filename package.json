@@ -1,0 +1,52 @@
+{
+  "name": "84_liver_analytics",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3040",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "cap:sync": "npx cap sync",
+    "cap:build:android": "cross-env CAPACITOR_BUILD=1 npm run build && npx cap copy android && npx cap open android"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@better-auth/drizzle-adapter": "^1.6.11",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.2",
+    "@libsql/client": "^0.17.3",
+    "@next/env": "^16.2.6",
+    "@react-email/components": "^1.0.12",
+    "@sentry/nextjs": "^10.55.0",
+    "better-auth": "^1.6.11",
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
+    "lucide-react": "^1.17.0",
+    "next": "16.2.6",
+    "papaparse": "^5.5.3",
+    "posthog-js": "^1.376.4",
+    "posthog-node": "^5.35.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "resend": "^6.12.4",
+    "stripe": "^22.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
