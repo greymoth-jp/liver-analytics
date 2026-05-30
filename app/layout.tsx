@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,12 +16,12 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "LiverAnalytics — ライバー事務所向けKPI管理",
+    default: "LiverAnalytics â€” ãƒ©ã‚¤ãƒãƒ¼äº‹å‹™æ‰€å‘ã‘KPIç®¡ç†",
     template: "%s | LiverAnalytics",
   },
   description:
-    "SHOWROOM・17LIVE・REALITYなど複数プラットフォームの投げ銭KPIを一元管理。ライバー事務所向けB2B SaaS。",
-  keywords: ["ライバー", "事務所", "投げ銭", "KPI", "SHOWROOM", "17LIVE", "REALITY"],
+    "SHOWROOMãƒ»17LIVEãƒ»REALITYãªã©è¤‡æ•°ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã®æŠ•ã’éŠ­KPIã‚’ä¸€å…ƒç®¡ç†ã€‚ãƒ©ã‚¤ãƒãƒ¼äº‹å‹™æ‰€å‘ã‘B2B SaaSã€‚",
+  keywords: ["ãƒ©ã‚¤ãƒãƒ¼", "äº‹å‹™æ‰€", "æŠ•ã’éŠ­", "KPI", "SHOWROOM", "17LIVE", "REALITY"],
   robots: "index, follow",
   openGraph: {
     type: "website",
@@ -35,6 +35,9 @@ export const metadata: Metadata = {
       { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
+  },
+  other: {
+    'apple-itunes-app': 'app-id=PLACEHOLDER_APP_ID',
   },
 };
 
