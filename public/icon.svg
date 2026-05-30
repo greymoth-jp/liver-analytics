@@ -1,0 +1,14 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" fill="#0b0f1a" rx="180"/>
+  <!-- Bar chart: 3 bars, tallest in center-right with rose accent -->
+  <!-- Bar 1 (left, shortest) -->
+  <rect x="240" y="580" width="140" height="240" rx="16" fill="#6366f1"/>
+  <!-- Bar 2 (center, medium) -->
+  <rect x="432" y="460" width="140" height="360" rx="16" fill="#6366f1"/>
+  <!-- Bar 3 (right, tallest) - rose accent -->
+  <rect x="624" y="320" width="140" height="500" rx="16" fill="#ec4899"/>
+  <!-- Top dot on tallest bar -->
+  <circle cx="694" cy="296" r="28" fill="#ffffff" opacity="0.9"/>
+  <!-- Baseline -->
+  <rect x="200" y="820" width="624" height="14" rx="7" fill="#6366f1" opacity="0.3"/>
+</svg>
