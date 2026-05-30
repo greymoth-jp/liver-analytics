@@ -1,11 +1,16 @@
 import Stripe from "stripe";
 
-if (!process.env.STRIPE_SECRET_KEY && process.env.NODE_ENV === "production") {
-  throw new Error("STRIPE_SECRET_KEY is not set");
+let _stripe: Stripe | null = null;
+function getStripe(): Stripe {
+  if (!_stripe) {
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!key) throw new Error("STRIPE_SECRET_KEY is not set");
+    _stripe = new Stripe(key, { apiVersion: "2026-05-27.dahlia" });
+  }
+  return _stripe;
 }
-
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "sk_test_placeholder", {
-  apiVersion: "2026-05-27.dahlia",
+export const stripe = new Proxy({} as Stripe, {
+  get(_t, prop) { return getStripe()[prop as keyof Stripe]; },
 });
 
 export async function createCheckoutSession({

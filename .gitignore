@@ -51,3 +51,5 @@ local.db-wal
 
 # env override
 !.env.example
+
+.vercel
