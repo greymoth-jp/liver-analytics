@@ -50,6 +50,23 @@ Tables: user/session/account/verification (Better Auth) + user_settings + agenci
 ### TypeScript ✅
 - npm run typecheck: clean (0 errors)
 
+### Vercel Deploy (Session 2 fix) ✅
+- fix: Stripe lazy-init Proxy pattern
+- fix: TURSO_DATABASE_URL check removed from module-level (now warns, not throws)
+- fix: export const dynamic = "force-dynamic" on dashboard/livers/payouts/settings pages
+- Production URL: https://84liveranalytics-fpwty1upp-greymoth-projects.vercel.app
+
+---
+
+## 100点評価 (cold)
+| 軸 | スコア | 理由 |
+|---|---|---|
+| 機能 (40) | 28 | CSV import + payout calc + AI forecast ✓。/reports placeholder。Pococha CSV parser 未実装 |
+| UI (30) | 22 | B2B dark pro palette ✓。AppSidebar ✓。モバイル未検証 |
+| 完成度 (20) | 13 | Phase 1-8 ✓(AI含む)。not-found/sitemap/robots 未追加 |
+| 差別化 (10) | 7 | Vライバー特化 + AI forecast は唯一。MCP/Pococha 統合未実装 |
+| **合計** | **70/100** | B2Bツールとして最小実用水準 |
+
 ---
 
 ## TODO (Post-MVP)
